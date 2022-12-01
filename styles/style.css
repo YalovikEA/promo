@@ -1,0 +1,180 @@
+html,
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    overflow-x: hidden;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1024px;
+    margin: auto;
+    padding: 16px;
+}
+
+.header {
+    text-align: center;
+    margin: initial auto;
+    margin-top: initial;
+}
+
+.subheader {
+    text-align: center;
+    margin: initial auto;
+}
+
+.images {
+    display: flex;
+    max-width: 768px;
+    width: 100%;
+    margin: 80px auto;
+}
+
+.image {
+    width: 33%;
+    margin: 0 auto;
+    transition: transform .3s ease-in-out;
+}
+
+.image:hover,
+.image:focus {
+    transform: rotate(0deg) scale(1.3);
+}
+
+.image_first {
+    transform: rotate(-28deg);
+}
+
+.image_second {
+    transform: rotate(-9deg);
+}
+
+.image_third {
+    transform: rotate(15deg);
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    box-shadow: 5px 5px 15px 3px rgba(0, 0, 0, 0.3);
+}
+
+.form-title {
+    max-width: 768px;
+    width: 100%;
+    font-size: 14px;
+    line-height: 20px;
+    font-style: italic;
+    opacity: 0.7;
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 600px;
+    width: 100%;
+    margin: -8px;
+    margin-bottom: 40px;
+}
+
+.form__input {
+    flex: 1;
+    margin: 8px;
+    padding: 8px 16px;
+    font-size: 16px;
+    line-height: 24px;
+    border: 1px solid #75b325;
+    border-radius: 7px;
+}
+
+.form__input::placeholder {
+    font-style: italic;
+}
+
+.form__submit {
+    min-width: 200px;
+    margin: 8px;
+    color: #fff;
+    padding: 8px 16px;
+    font-size: 16px;
+    line-height: 24px;
+    background: #75b325;
+    border: 1px solid transparent;
+    border-radius: 7px;
+    transition: opacity .3s ease-in-out;
+    cursor: pointer;
+}
+
+@media (max-width: 480px) {
+    .form__submit {
+        width: 100%;
+    }
+}
+
+.form__submit:hover,
+.form__submit:focus {
+    opacity: .7;
+}
+
+.socials {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: -8px;
+}
+
+.socials__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 200px;
+    margin: 16px;
+    padding: 8px 16px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 7px;
+    transition: opacity .3s ease-in-out;
+}
+
+.socials__link:hover,
+.socials__link:focus {
+    opacity: .7;
+}
+
+.socials__link_tg {
+    background: #049be5;
+}
+
+.socials__link_tg::before {
+    content: '';
+    display: inline-flex;
+    width: 30px;
+    height: 30px;
+    margin-right: 8px;
+    background: url('../images/telegram.svg');
+}
+
+.socials__link_wa {
+    background: #28a71b;
+}
+
+.socials__link_wa::before {
+    content: '';
+    display: inline-flex;
+    width: 30px;
+    height: 30px;
+    margin-right: 8px;
+    background: url('../images/whatsapp.svg');
+}
